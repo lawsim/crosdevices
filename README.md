@@ -1,6 +1,6 @@
 ## Synopsis
 
-This project allows you to import the output from google apps manager command "print cros full > crosdevices.csv" and read data about your Chrome devices for your school district.
+This project allows you to import the output from google apps manager command "print cros full > crosdevices.csv" and read data about your Chrome devices for your school district.  Some screenshots are available here: http://imgur.com/a/7Tag5
 
 This utility relies on you having your Chrome Devices organized in your google apps structure in sub-organizationss with the parent organization being named "Carts" and each OU under that being named after a school/organization.  The structure would look like this:
 http://imgur.com/a/IW1hf
