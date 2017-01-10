@@ -17,6 +17,7 @@ class Device_activity extends CI_Controller {
 	
 	public function index()
 	{
+		echo "<h2>Device activity and updates</h2>";
 		echo anchor('device_activity/get_device_activity',"Device activity") . "<br />";
 		
 		echo "<br /><br />";
@@ -399,9 +400,11 @@ class Device_activity extends CI_Controller {
 				"minutes" => round($site->total_minutes)
 			);
 			
+			$divisor = $data['schooldata'][$site->school]["enrollment"] == 0 ? 1 : $data['schooldata'][$site->school]["enrollment"];
+			
 			$data['avgminarr'][$site->date][$site->school] = array(
 				"schoolname" => $site->name,
-				"aminutes" => round($site->total_minutes / $data['schooldata'][$site->school]["enrollment"])
+				"aminutes" => round($site->total_minutes / $divisor)
 			);
 		}
 		

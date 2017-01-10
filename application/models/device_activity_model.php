@@ -312,6 +312,8 @@ class device_activity_model extends CI_Model {
 		$from ? $this->db->where('a.date >=', $from) : false;
 		$to ? $this->db->where('a.date <=', $to) : false;
 		
+		$this->db->where('d.school != 1');
+		
 		$this->db->group_by('d.school');
 		$this->db->group_by('a.date');
 		
