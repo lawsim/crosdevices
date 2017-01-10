@@ -1,9 +1,10 @@
 ## Synopsis
 
-This project allows you to import the output from google apps manager command "print cros full > crosdevices.csv" and read data about your Chrome devices.
+This project allows you to import the output from google apps manager command "print cros full > crosdevices.csv" and read data about your Chrome devices for your school district.
 
-This utility relies on you having your Chrome Devices organized in your google apps structure in sub-organizationss with the parent organization being named "Carts" and each OU under that being named after a school.
-IMAGE HERE
+This utility relies on you having your Chrome Devices organized in your google apps structure in sub-organizationss with the parent organization being named "Carts" and each OU under that being named after a school/organization.  The structure would look like this:
+http://imgur.com/a/IW1hf
+
 You can edit my_constants.php under application/config if your root OU is not named "Carts"
 
 Additionally, the utility relies on having the Location field correspond to the name of the Cart (or similar grouping) of the chromebook.  I.e. all of the chromebooks in cart 5 would be labeled "Cart 5"
