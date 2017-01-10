@@ -35,5 +35,5 @@ Note: this utility has no security built in and should not be run on a public we
 6. This sets the enrollment and target_devices columns for each school when they are first imported to 0.  You can update these values by choosing "Update enrollment and device targets for schools" from the First run/install page
 
 ## Viewing data
-1. From your main page (i,e. "http://localhost/crosdevices") choose "Device activity"
+1. From your main page (i,e. "http://localhost/crosdevices") choose "Proceed to device activity after install"
 2. This page contains all of the details about your devices/usage/unused devices/etc

@@ -16,8 +16,9 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		echo "<h2>First run/installation</h2>";
-		echo anchor('welcome/install',"First run readme/install") . "<br />";
-		echo anchor('welcome/update_schools',"Update enrollment and device targets for schools (do this after importing)") . "<br />";
+		echo anchor_popup('welcome/install',"First run readme/install") . "<br />";
+		echo anchor_popup('device_activity/parse_crosdev',"Import devices from crosdevices.csv") . "<br />";
+		echo anchor_popup('welcome/update_schools',"Update enrollment and device targets for schools (do this after importing)") . "<br />";
 		echo "<br /><br />";
 		
 		echo anchor('device_activity',"Proceed to device activity after install") . "<br />";
