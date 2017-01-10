@@ -1,0 +1,59 @@
+table#schooltable {
+    font-size:16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#schooltable td, #schooltable th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#schooltable tr:nth-child(even){background-color: #f2f2f2}
+
+#schooltable th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+table.greentable {
+    font-size:16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.greentable td, .greentable th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.greentable tr:nth-child(even){background-color: #f2f2f2}
+
+.greentable th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #4CAF50;
+    color: white;
+}
+#legend {
+	height: 50px;
+	background: rgba(127, 127, 127, 0.5)
+}
+#legend span {
+	display: inline-block;
+	padding: 15px 30px;
+	position: relative;
+}
+#legend span:after {
+	padding-left: 4px;
+	content: '\00a0\00a0\00a0\00a0\00a0\00a0';
+	text-decoration: line-through;
+}
